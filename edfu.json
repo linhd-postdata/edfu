@@ -1,16 +1,4 @@
-from rantanplan.core import syllabify
-
-"""
-Words syllabification have been extracted from educalingo dict
-as there is no official resource on word syllabification
-https://educalingo.com/es/dic-es
-
-Some words were incorrectly syllabified and for this purpose DIRAE
-https://dirae.es/ and the FUNDEU https://www.fundeu.es/dudas/ website
-have been consulted to resolve these cases.
-"""
-
-DICT_TEST = {
+{
     "aarónica": "aa-ró-ni-ca",
     "aarónico": "aa-ró-ni-co",
     "aaronita": "aa-ro-ni-ta",
@@ -106371,9 +106359,5 @@ DICT_TEST = {
     "zutujil": "zu-tu-jil",
     "zuzar": "zu-zar",
     "zuzo": "zu-zo",
-    "zuzón": "zu-zón"}
-
-
-def test_syllabification_dictionary():
-    for key in DICT_TEST:
-        assert "-".join(syllabify(key)[0]) == DICT_TEST[key]
+    "zuzón": "zu-zón"
+}
